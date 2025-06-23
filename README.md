@@ -90,6 +90,30 @@ Represents the scaling of the domain to include multiple client machines:<br />
  
 
 <h2>Deployment and Configuration Steps</h2>
+<h3>Domain Controller Setup</h3>
+<p>
+<img width="2391" alt="Screenshot 2025-06-22 at 7 56 26 PM" src="https://github.com/user-attachments/assets/36a45b93-2573-4806-b5cd-36caaf3a4cb7" />
+</p>
+<p>
+Domain Controller (DC-1) with Active Directory Domain Services and DNS roles successfully installed. On the right, ipconfig /all confirms the server's static IP configuration (10.0.0.4) and DNS settings, which are essential for proper domain name resolution and communication between domain-joined devices.
+</p>
+<br />
+
+<p>
+<img width="359" alt="Screenshot 2025-06-22 at 8 07 28 PM" src="https://github.com/user-attachments/assets/826759a7-3634-4772-aefb-964cb949ccc9" />
+</p>
+<p>
+mydomain.com was successfully created and the server was promoted to a Domain Controller. Active Directory tools recognize the domain, confirming that the promotion process was completed. 
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
