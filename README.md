@@ -99,42 +99,45 @@ Domain Controller (DC-1) with Active Directory Domain Services and DNS roles suc
 </p>
 <br />
 
+<h3>Domain Creation Confirmation</h3>
 <p>
 <img width="359" alt="Screenshot 2025-06-22 at 8 07 28 PM" src="https://github.com/user-attachments/assets/826759a7-3634-4772-aefb-964cb949ccc9" />
 </p>
 <p>
-mydomain.com was successfully created and the server was promoted to a Domain Controller. Active Directory tools recognize the domain, confirming that the promotion process was completed. 
+mydomain.com was successfully created and the server was promoted to a Domain Controller. Active Directory tools recognize the domain, confirming that the promotion process was completed.
 </p>
 <br />
 
+<h3>Organizational Unit (OU) Structure & User Management</h3>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1283" alt="Screenshot 2025-06-24 at 1 22 20 PM" src="https://github.com/user-attachments/assets/85079846-91f2-406c-83ee-e3cf3f52c1d3" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+mydomain.com structured OU hierarchy under the parent OU Ohio. Sub-OUs represent various departments: Accounting, Admin, Computers, HR, IT, Management, and Sales.</br>
+  - Computers OU contains Client-1, the domain-joined workstation.</br>
+  - Admin OU contains the domain admin account Kevin Benavides, a member of the Domain Admins group.</br>
+  - Other departmental OUs contain user accounts assigned to the Domain Users group, organized by department for clear policy and permissions management. 
 </p>
 <br />
 
+<h3>Client Domain Join & Domain Login Confirmation</h3>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1580" alt="Screenshot 2025-06-24 at 1 44 22 PM" src="https://github.com/user-attachments/assets/fe208be1-f511-45cb-a517-d32756b87dc4" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Logged into the Client VM as Jim Halpert, a domain user in the Sales OU of mydomain.com. The ipconfig /all output confirms that the client machine is using the Domain Controller (10.0.0.x) for DNS, and the DNS suffix reflects successful domain join. This validates that the domain login and network communication are fully operational. 
 </p>
 <br />
 
+<h3>Remote Desktop Configuration</h3>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="413" alt="Screenshot 2025-06-24 at 2 36 39 PM" src="https://github.com/user-attachments/assets/2fa35e78-22aa-49c5-bfbc-c63d024f62c2" />
+<img width="553" alt="Screenshot 2025-06-24 at 2 35 20 PM" src="https://github.com/user-attachments/assets/a79af99e-50cb-40f2-8d4b-bcb949410246" />
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Remote Desktop was enabled on the Client VM, and domain users were granted RDP access. Verified remote login using domain credentials for Kevin Benavides.</br>
+  - Kevin Benavides successfully accessed Angela Martin's computer via RDP. Fortunately, no HR violations - just a few cat pictures. 
 </p>
 <br />
+
