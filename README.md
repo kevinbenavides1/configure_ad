@@ -92,7 +92,8 @@ Represents the scaling of the domain to include multiple client machines:<br />
 <h2>Deployment and Configuration Steps</h2>
 <h3>Domain Controller Setup</h3>
 <p>
-<img width="2391" alt="Screenshot 2025-06-22 at 7 56 26 PM" src="https://github.com/user-attachments/assets/36a45b93-2573-4806-b5cd-36caaf3a4cb7" />
+<img width="2391" alt="Screenshot 2025-06-22 at 7 56 26 PM" src="https://github.com/user-attachments/assets/07e897ba-1ea6-4698-a5fa-9c527c2b4ee4" />
+
 </p>
 <p>
 Domain Controller (DC-1) with Active Directory Domain Services and DNS roles successfully installed. On the right, ipconfig /all confirms the server's static IP configuration (10.0.0.4) and DNS settings, which are essential for proper domain name resolution and communication between domain-joined devices.
@@ -122,7 +123,8 @@ mydomain.com structured OU hierarchy under the parent OU Ohio. Sub-OUs represent
 
 <h3>Client Domain Join & Domain Login Confirmation</h3>
 <p>
-<img width="1580" alt="Screenshot 2025-06-24 at 1 44 22 PM" src="https://github.com/user-attachments/assets/fe208be1-f511-45cb-a517-d32756b87dc4" />
+<img width="1580" alt="Screenshot 2025-06-24 at 1 44 22 PM" src="https://github.com/user-attachments/assets/edab84a2-acef-4e9c-ade3-3b6dfb2e6ed9" />
+
 </p>
 <p>
 Logged into the Client VM as Jim Halpert, a domain user in the Sales OU of mydomain.com. The ipconfig /all output confirms that the client machine is using the Domain Controller (10.0.0.x) for DNS, and the DNS suffix reflects successful domain join. This validates that the domain login and network communication are fully operational. 
